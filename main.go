@@ -15,6 +15,5 @@ func main() {
 	database.SetupDatabase()
 	book.SetupRoutes(basePath)
 
-	// router.HandleFunc("/books", handleBooks)
 	log.Fatal(http.ListenAndServe(":8000", nil))
 }
